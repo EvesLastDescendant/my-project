@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Josefin+Sans:wght@600&display=swap');
+
+:root {
+    --primary: #0d6efd;
+    --ffs: 'pnum' on, 'lnum' on;
+    --inter: 'Inter', sans-serif;
+    --josefin: 'Josefin Sans', sans-serif;
+    --dm: 'DM Sans', sans-serif;    
+}
+.navul a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.greyarea {
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    background-color: rgba(67, 66, 55, 0.3);
+    height: 100%;
+}
+.greyarea :is(p, div) {
+    position: relative;
+    top: 4cm;
+}
+
+.greyarea p {
+    
+}
+
+.mailto, .blank:hover {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.mailto:hover, .blank{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.we-offer img {transform: scaleX(-1);}
+
+.we-offer > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cir {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    display: grid;
+    place-items: center;
+}
+
+.mivi div {height: 270px;}
+.ocv iconify-icon {scale: 2.5;}
+
+.heart {
+    position: relative;
+    top: 25px;
+}
+
+.hands {
+    position: relative;
+    bottom: 25px;
+}
+
+.trng button {
+    background-color: var(--primary);
+    color: white;
+}
+
+.trng button:hover {
+    background-color: white;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.smc {
+    position: relative;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+}
+
+.smc iconify-icon {scale: 2;}
+
+
+footer {
+
+}
+
+.footer-socials a {
+    cursor: pointer;
+}
+
+.footer-socials a:hover {
+    animation: shake 2s infinite;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+@keyframes shake {
+    10%{ transform: scale(1.05) rotate(5deg);}
+    20%{ transform: scale(1.05) rotate(-5deg);}
+    30%{ transform: scale(1.05) rotate(5deg);}
+    40%{ transform: none;}
+}
+@media screen and (min-width: 200px) and (max-width: 480px) {
+    .cir {
+        width: 90px;
+        height: 90px;
+        border-radius: 45px;
+        display: grid;
+        place-items: center;
+    }
+
+    .cir :is(.instafood, .ledger) {
+        scale: 0.7;
+    }
+
+
+}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.1/dist/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/scss/bootstrap.scss">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm border border-bottom shadow-sm sticky-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/pix/logo.png" alt="Itcentralng" style="width: 150px; height: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavlabel">
+                <div class="offcanvas-header">
+                    <p class="offcanvas-title h5 text-primary" id="offcanvasNavlabel">ItCentralng</p>
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 fs-5 navul">
+                        <li class="nav-item p-4">
+                            <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item p-4">
+                            <a class="nav-link text-primary" href="#pdts">Services</a>
+                        </li>
+                        <li class="nav-item p-4">
+                            <a href="#trng" class="nav-link text-primary">Training</a>
+                        </li>
+                        <li class="nav-item p-4">
+                            <a href="#blog" class="nav-link text-primary">Blog</a>
+                        </li>
+                        <li class="nav-item p-4">
+                            <a href="#events" class="nav-link text-primary">Events</a>
+                        </li>
+                        <li class="nav-item p-4">
+                            <a href="#footer" class="nav-link text-primary">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 clearfix position-relative intro">
+        <img src="/pix/img1.jpeg" alt="1" class="img-fluid rounded" style="width: inherit; height: inherit;">
+        <div class="container-fluid float-end pt-5 px-5 w-50 rounded-end greyarea">
+            <p class="text-start text-white fs-3">
+                ItCentral is an brand of Mr. Teey <br>
+                investement Ltd, it's a new brand <br>
+                providing hands-on IT training and <br>
+                software development services.
+            </p>
+            <div class="container w-75 float-start clearfix mt-5">
+                <a href="mailto:Itcentralng@gmail.com" target="_blank" class="container float-start w-25 p-2 text-center text-decoration-none rounded mailto">Contact</a>
+                <a href="#training" class="container float-end w-25 p-2 text-center text-decoration-none rounded blank">Services</a>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 clearfix position-relative we-offer">
+        <img src="/pix/img2.jpeg" alt="pic" class="img-fluid rounded" style="width: inherit; height: inherit;">
+        <div class="container pt-5 px-5 text-white">
+            <p class="h3">We Offer</p>
+            <ul class="mt-3 fs-5">
+                <li>Startup, accelarating and incubation</li><br>
+                <li>Software solutions</li><br>
+                <li>Software as a Service (SaaS)</li><br>
+                <li>Emerging Technology Solutions</li><br>
+                <li>Graphics design</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mt-5 text-dark pdts" id ="pdts">
+        <p class="h1 display-6">You might have used some of our<br><b> Products</b></p>
+        <div class="container-fluid mt-5 d-flex flex-row justify-content-between">
+            <div class="pt-3 d-flex flex-column">
+                <div class="border border-2 border-primary text-center cir">
+                    <img src="/pix/schoola.png" class="img-fluid schoola" alt="schoola" width="180" height="80">
+                </div>
+                <p class="mt-3 text-center fw-bold fs-4">Schoola</p>
+            </div>
+            <div class="pt-3 d-flex flex-column">
+                <div class="border border-2 border-primary text-center cir">
+                    <img src="/pix/instafood.png" class="img-fluid instafood" alt="instafood" width="120" height="110">
+                </div>
+                <p class="mt-3 text-center fw-bold fs-4">Instafood</p>
+            </div>
+            <div class="pt-3 d-flex flex-column">
+                <div class="border border-2 border-primary text-center cir">
+                    <img src="/pix/ledger.png" class="img-fluid ledger" alt="ledger" width="120" height="110">
+                </div>
+                <p class="mt-3 text-center fw-bold fs-4">Ledger</p>
+            </div>
+        </div>
+    </div>
+    <div class="container clearfix mt-5 text-dark mivi">
+        <div class="container w-auto pt-5 px-4 float-start border border-2 border-primary rounded">
+            <p class="h1">Mission</p>
+            <p class="mt-4">
+                To build the next generation of northern tech <br>
+                startup founders.</p>
+        </div>
+        <div class="container w-auto pt-5 px-4 float-end border border-2 border-primary rounded">
+            <p class="h1">Vision</p>
+            <p class="mt-4">
+                We envision a Nigeria where globally relevant <br>
+                start-ups come out of the northern part of the <br>
+                country.
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 pt-5 text-bg-primary text-wrap ocv">
+        <p class="h3 mx-5">Our Core Values</p>
+        <div class="container-fluid mt-5 text-center clearfix">
+            <div class="float-start ocvbox border">
+                <div class="bg-white mx-auto cir">
+                    <iconify-icon icon="fluent:people-team-20-regular" style="color: blue;" class="img-fluid"></iconify-icon>
+                </div>
+                <p class="h5 mt-2">Team Work</p>
+                <p class="lh-lg">Lorem ipsum dolor sit,<br> 
+                    amet consectetur adipisicing elit.<br> 
+                    officia quos quis!
+                </p>                
+            </div>
+            <div class="float-end ocvbox border">
+                <div class="bg-white mx-auto cir">
+                    <iconify-icon icon="icon-park-outline:respect" style="color: blue;" class="img-fluid"></iconify-icon>
+                </div>
+                <p class="h5 mt-2">Respect</p>
+                <p class="lh-lg">Lorem ipsum dolor sit,<br> 
+                    amet consectetur adipisicing elit.<br> 
+                    officia quos quis!
+                </p>
+            </div>
+            <div class="float-center ocvbox border">
+                <div class="bg-white mx-auto cir">
+                    <iconify-icon icon="heroicons:cube-transparent" style="color: blue;" class="img-fluid"></iconify-icon>
+                </div>
+                <p class="h5 mt-2">Transparency</p>
+                <p class="lh-lg">Lorem ipsum dolor sit,<br> 
+                    amet consectetur adipisicing elit.<br> 
+                    officia quos quis!
+                </p>
+            </div>
+        </div>
+        <div class="border container-fluid mt-5 text-center d-flex flex-row justify-content-around">
+            <div class="border container ocvbox">
+                <div class="bg-white mx-auto cir">
+                    <iconify-icon icon="carbon:growth" style="color: blue;" class="img-fluid"></iconify-icon>
+                </div>
+                <p class="h5 mt-2">Growth</p>
+                <p class="lh-lg">Lorem ipsum dolor sit,<br> 
+                    amet consectetur adipisicing elit.<br> 
+                    officia quos quis!
+                </p>
+            </div>
+            <div class="container ocvbox">
+                <div class="bg-white mx-auto cir">
+                    <iconify-icon icon="teenyicons:heart-circle-outline" style="color: blue;" class="img-fluid heart"></iconify-icon>
+                    <iconify-icon icon="fa6-solid:hands-holding" style="color: blue;" class="img-fluid hands"></iconify-icon>
+                </div>
+                <p class="h5 mt-2">Empathy</p>
+                <p class="lh-lg">Lorem ipsum dolor sit,<br> 
+                    amet consectetur adipisicing elit.<br> 
+                    officia quos quis!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5 pt-5 trng" id="trng">
+        <p class="h3 mx-5">Trainings We Provide</p>
+        <div class="container-fluid mt-5 px-5 text-center clearfix">
+            <div class="float-start">
+                <button type="button" class="btn text-center cir" data-bs-toggle="modal" data-bs-target="#mobmodal">
+                    <p class="h5">Mobile App<br>Development</p>
+                </button>
+                <div class="mx-auto bg-white smc">
+                    <iconify-icon icon="cib:android-alt" style="color: blue;" class="img-fluid"></iconify-icon>
+                </div>
+            </div>
+            <div class="float-end">
+                <button type="button" class="btn text-center cir" data-bs-toggle="modal" data-bs-target="#webdevmodal">
+                    <p class="h5">Web<br>Development</p>
+                </button>
+                <div class="container">
+                    <div class="mx-auto bg-white smc">
+                        <iconify-icon icon="mdi:web" style="color: blue;" class="img-fluid"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="float-center">
+                <button type="button" class="btn mx-auto text-center cir" data-bs-toggle="modal" data-bs-target="#pymodal">
+                    <p class="h5">Python<br>Programming</p>
+                </button>
+                <div class="container">
+                    <div class="mx-auto bg-white smc">
+                        <iconify-icon icon="vscode-icons:file-type-python" style="color: blue;" class="img-fluid"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="mobmodal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-5 clearfix mobModal">
+                        <button type="button" class="btn border border-0 float-end" data-bs-dismiss="modal">&times;</button>
+                        <p class="h4 lh-base">Mobile Web Development<br>(Java for android development)</p>
+                        <p>3 Months Hands-on Training<br> Course Features</p>
+                        <ul>
+                            <li>Expert Lead</li>
+                            <li>Hands-on Training</li>
+                            <li>Conducive Learning Environment Internship (Real life experience)</li>
+                            <li>Certification</li>
+                            <li>Job Readiness/Connection</li>
+                        </ul>
+                        <p class="tp">N100k per seat Limited seats available</p>
+                        <iconify-icon icon="entypo:old-phone" width="20" height="20" style="color: var(--primary);"></iconify-icon><span class="bspan">08088885123</span><br>
+                        <iconify-icon icon="fluent:mail-16-filled" width="20" height="20" style="color: var(--primary);"></iconify-icon><span class="bspan">itcentralng"gmail.com</span>
+                        <iconify-icon icon="cib:android-alt" width="500" height="500" class="big-icon-mob"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="pymodal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-5 pyModal">
+                        <button type="button" class="btn border border-0 float-end" data-bs-dismiss="modal">&times;</button>
+                        <p class="h4">Python Programming</p>
+                        <p>3 Months Hands-on Training<br> Course Features</p>
+                        <ul>
+                            <li>Expert Lead</li>
+                            <li>Hands-on Training</li>
+                            <li>Conducive Learning Environment Internship (Real life experience)</li>
+                            <li>Certification</li>
+                            <li>Job Readiness/Connection</li>
+                        </ul>
+                        <p class="tp">N100k per seat Limited seats available</p>
+                        <iconify-icon icon="entypo:old-phone" width="20" height="20" style="color: var(--primary);"></iconify-icon><span class="bspan">08088885123</span><br>
+                        <iconify-icon icon="fluent:mail-16-filled" width="20" height="20" style="color: var(--primary);"></iconify-icon><span class="bspan">itcentralng"gmail.com</span>
+                        <iconify-icon icon="vscode-icons:file-type-python" width="500" height="500" class="big-icon-python"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="webdevmodal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-5 webModal">
+                        <button type="button" class="btn border border-0 float-end" data-bs-dismiss="modal">&times;</button>
+                        <p class="h4">Web Development</p>
+                        <p>3 Months Hands-on Training<br> Course Features</p>
+                        <ul>
+                            <li>Expert Lead</li>
+                            <li>Hands-on Training</li>
+                            <li>Conducive Learning Environment Internship (Real life experience)</li>
+                            <li>Certification</li>
+                            <li>Job Readiness/Connection</li>
+                        </ul>
+                        <p class="tp">N100k per seat Limited seats available</p>
+                        <iconify-icon icon="entypo:old-phone" width="20" height="20" style="color: var(--primary);"></iconify-icon><span class="bspan">08088885123</span><br>
+                        <iconify-icon icon="fluent:mail-16-filled" width="20" height="20" style="color: var(--primary);"></iconify-icon><span class="bspan">itcentralng"gmail.com</span>
+                        <iconify-icon icon="mdi:web" width="500" height="500" class="big-icon-web"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 px-5 text-center clearfix">
+            <div class="float-start">
+                <button type="button" class="btn text-center cir" data-bs-toggle="modal" data-bs-target="#dlmodal">
+                    <p class="h5">Digital<br>Literacy</p>
+                </button>
+                <div class="container">
+                    <div class="mx-auto bg-white smc">
+                        <iconify-icon icon="akar-icons:desktop-device" style="color: blue;" class="img-fluid"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="float-end">
+                <button type="button" class="btn text-center cir" data-bs-toggle="modal" data-bs-target="#ixmodal">
+                    <p class="h5">UI/UX<br>Design</p>
+                </button>
+                <div class="container">
+                    <div class="mx-auto bg-white smc">
+                        <iconify-icon icon="majesticons:ux-circle-line" style="color: blue;" class="img-fluid"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="float-center pt-5">
+                <a class="text-decoration-none href="#">
+                    <img src="/pix/logo.png" alt="logo" style="width: 150px; height: auto;">
+                </a>
+            </div>
+        </div>
+        <div class="modal fade" id="dlmodal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-5 dlModal">
+                        <button type="button" class="btn border border-0 float-end" data-bs-dismiss="modal">&times;</button>
+                        <p class="h4">Digital Literacy</p>
+                        <p>3 Months Hands-on Training<br> Course Features</p>
+                        <ul>
+                            <li>Expert Lead</li>
+                            <li>Hands-on Training</li>
+                            <li>Conducive Learning Environment Internship (Real life experience)</li>
+                            <li>Certification</li>
+                            <li>Job Readiness/Connection</li>
+                        </ul>
+                        <p class="tp">N100k per seat Limited seats available</p>
+                        <iconify-icon icon="entypo:old-phone" width="20" height="20" style="color: var(--primary);"></iconify-icon><span class="bspan">08088885123</span><br>
+                        <iconify-icon icon="fluent:mail-16-filled" width="20" height="20" style="color: var(--primary);"></iconify-icon><span class="bspan">itcentralng"gmail.com</span>
+                        <iconify-icon icon="akar-icons:desktop-device" width="500" height="500" class="big-icon-dl"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="ixmodal">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-5 uiModal">
+                        <button type="button" class="btn border border-0 float-end" data-bs-dismiss="modal">&times;</button>
+                        <p class="h4">UI/UX Design</p>
+                        <p>3 Months Hands-on Training<br> Course Features</p>
+                        <ul>
+                            <li>Expert Lead</li>
+                            <li>Hands-on Training</li>
+                            <li>Conducive Learning Environment Internship (Real life experience)</li>
+                            <li>Certification</li>
+                            <li>Job Readiness/Connection</li>
+                        </ul>
+                        <p class="tp">N100k per seat Limited seats available</p>
+                        <iconify-icon icon="entypo:old-phone" width="20" height="20" style="color: var(--primary);"></iconify-icon><span class="bspan">08088885123</span><br>
+                        <iconify-icon icon="fluent:mail-16-filled" width="20" height="20" style="color: var(--primary);"></iconify-icon><span class="bspan">itcentralng"gmail.com</span>
+                        <iconify-icon icon="majesticons:ux-circle-line" width="500" height="500" class="big-icon-ui"></iconify-icon>                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vr border border-1 border-info mob"></div>
+        <div class="vr border border-1 border-info py"></div>
+        <div class="vr border border-1 border-info web"></div>
+        <div class="vr border border-1 border-info dl"></div>
+        <div class="vr border border-1 border-info ui"></div>
+    </div>
+    <div class="container position-relative mt-5">
+        <img src="/pix/office.png" alt="lab" class="img-fluid" style="width: inherit; height: inherit;">
+        <div class="text-white position-absolute bottom-50 px-5">
+            <p class="fs-1">Our Well Equipped<br>Labs</p>
+        </div>
+    </div>
+    <div class="container mt-5 pt-5 blog" id="blog">
+        <p class="h3 mx-3">Blog Posts</p>
+        <div class="container-fluid clearfix">
+            <div class="float-start w-50">
+                <img src="/pix/bl.jfif" alt="blog-pik" class="img-fluid rounded" style="width: inherit; height: inherit;">
+            </div>
+            <div class="float-end w-50 clearfix">
+                <img src="/pix/b2.jfif" alt="blog-pik" class="img-fluid rounded float-end" style="width: inherit; height: inherit;">
+            </div>
+        </div>
+        <div class="container-fluid clearfix">
+            <div class="float-start w-25">
+                <p class="fw-bold">What the future holds for VR</p>
+                <p>dolor sit amet consectetur elit. sed do <br> 
+                    suis<span id="dot">...</span>
+                    <button class="btn"><a href="" target="_blank" class="text-decoration-none text-dark">Read More</a></button>
+                </p>
+            </div>
+            <div class="float-end w-25">
+                <p class="fw-bold"> Is too much tech a thing</p>
+                <p>dolor sit amet consectetur elit. sed do <br> 
+                    suis<span id="point">...</span>
+                    <button class="btn"><a href="" target="_blank" class="text-decoration-none text-dark">Read More</a></button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 pt-5 events" id="events">
+        <p class="h3">Recent Events</p>
+        <div class="container-fluid row">
+            <div class="col">
+                <img src="/pix/epik.jfif" alt="i" class="img-fluid" style="width: inherit; height: inherit;">
+            </div>
+            <div class="col">
+                <img src="/pix/epik1.jfif" alt="ii" class="img-fluid" style="width: inherit; height: inherit;">
+            </div>
+            <div class="col">
+                <img src="/pix/epik2.jfif" alt="iii" class="img-fluid" style="width: inherit; height: inherit;">
+            </div>
+            <div class="col">
+                <img src="/pix/epik3.jfif" alt="iv" class="img-fluid" style="width: inherit; height: inherit;">
+            </div>
+        </div>
+        <div class="moreContent h-auto w-50">
+            <p class="h5">Scenes from the Annual Tech Hub <br>Hangout 2.3.1</p>
+            <p class="h6">Check out more of our events</p><br>
+            <button type="button" class="btn btn-white border border-2 border-primary text-center text-primary px-5" onclick="window.location('www.google.com');">Events</button>
+            <iconify-icon icon="akar-icons:arrow-forward" class="img-fluid event-icon" flip="horizontal,vertical"></iconify-icon>
+        </div>
+    </div>
+    <footer class="container-fluid pt-5 mt-5 text-bg-primary" id="footer">
+        <div class="container-fluid mx-auto row row-cols-3">
+            <div class="col-4 d-flex flex-column text-start addmailtel">
+                <div class="row">
+                    <iconify-icon icon="gridicons:location" class="col-1 img-fluid"></iconify-icon>
+                    <p class="col-11"> No.44A Isa Kaita Road<br>Unguwan Sarki Kaduna</p>
+                </div><br>
+                <div class="row">
+                    <iconify-icon icon="fluent:mail-16-filled" class="col-1 img-fluid"></iconify-icon>
+                    <p class="col-11"> Itcentral@gmail.com</p>
+                </div><br>
+                <div class="row">
+                    <iconify-icon icon="entypo:old-phone" class="col-1 img-fluid"></iconify-icon>
+                    <p class="col-11"> 08088885123</p>
+                </div><br>
+                <div class="row w-50 footer-socials">
+                    <a href="https://twitter.com/itcentralng?t=PNmJ6LluRHJOXB33rj_afg&s=08" title="twitter.com/itcentralng"  target="_blank" class="col-4"><iconify-icon icon="la:twitter" class="img-fluid"></iconify-icon></a>
+                    <a href="https://www.facebool.com/itcentralng" title="facebool.com/itcentralng"  target="_blank" class="col-4"><iconify-icon icon="ic:outline-facebook" class="img-fluid"></iconify-icon></a>
+                    <a href="https://instagram.com/itcentralng?igshid=YmMyMTA2M2Y=" title="instagram.com/itcentralng" target="_blank" class="col-4"><iconify-icon icon="ant-design:instagram-filled" class="img-fluid"></iconify-icon></a>
+                </div>
+            </div>
+            <div class="col-4 text-center footer-links">
+                <p><a href="#" class="text-decoration-none text-white">Home</a></p><br>
+                <p><a href="#pdts" class="text-decoration-none text-white">Services</a></p><br>
+                <p><a href="#trng" class="text-decoration-none text-white">Trainings</a></p><br>
+                <p><a href="#events" class="text-decoration-none text-white">Events</a></p><br>
+                <p><a href="#blog" class="text-decoration-none text-white">Blog</a></p><br>
+                <p><a href="#footer" class="text-decoration-none text-white">About</a></p><br>
+            </div>
+            <div class="col-4 text-center footer-section">
+                <p>Startup, accelarating and incubation</p><br>
+                <p>Software solutions</p><br>
+                <p>Software as a Service(SaaS)</p><br>
+                <p>Emerging Technology Solutions</p><br>
+                <p>Graphics design</p>
+            </div>
+            <div class="col-12 px-3">
+                &commat;2022 Mr teey Investment All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html> 
