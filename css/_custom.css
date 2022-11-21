@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+
+:root {
+    --primary: #0d6efd;
+    --ffs: 'pnum' on, 'lnum' on;
+    --inter: 'Inter', sans-serif;
+    --josefin: 'Josefin Sans', sans-serif;
+    --dm: 'DM Sans', sans-serif;
+    --encode: 'Encode Sans', sans-serif;
+    --fs-1: 27px;
+    --fs-2: 15px;
+    --fs-3: 20px;
+    --fs-4: 40px;
+    --icon: rgba(0, 0, 0, 0.04);     
+}
+.navul a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.greyarea {
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    background-color: rgba(67, 66, 55, 0.3);
+    height: 100%;
+}
+
+.greyarea p {font-size: var(--fs-1);}
+
+:is(.greyarea p, .we-offer,
+    .pdts, .mivi,
+    .ocv, .trng,
+    .lab, .blog,
+    .events, footer) {
+        font-family: var(--dm);
+    }
+
+:is(.navul a, .greyarea a) {
+    font-family: var(--josefin);
+}    
+
+.greyarea :is(p, div) {
+    position: relative;
+    top: 2.5cm;
+}
+
+.greyarea a {font-size: var(--fs-2);}
+
+.mailto, .blank:hover {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.mailto:hover, .blank{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.we-offer img {transform: scaleX(-1);}
+
+.we-offer > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.we-offer li {font-size: var(--fs-3);}
+
+.pdts p {font-size: xx-large;}
+
+.cir {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    display: grid;
+    place-items: center;
+}
+
+.mivi div {height: 270px;}
+.ocv iconify-icon {scale: 2.5;}
+
+.heart {
+    position: relative;
+    top: 25px;
+}
+
+.hands {
+    position: relative;
+    bottom: 25px;
+}
+
+.trng button {
+    background-color: var(--primary);
+    color: white;
+}
+
+.trng button:hover {
+    background-color: white;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.big-icon-mob {bottom: 4in;}
+
+.big-icon-py {
+    position: relative;
+    left: 3.4cm;
+    bottom: 3.7in;
+}
+:is(.big-icon-mob,
+.big-icon-web,
+.big-icon-dl,
+.big-icon-ui) {
+    position: relative;
+    left: 3.4cm;
+    color: var(--icon);
+}
+
+:is(.big-icon-web,
+.big-icon-dl,
+.big-icon-ui) {bottom: 3.7in;}
+
+hr{
+    border: 2px dashed rgba(12, 175, 172, 0.5);
+    position: relative;
+}
+.mob {
+    bottom: 7cm;
+    left: 1.9in;
+    transform: rotate(22deg);
+    width: 500px;
+}
+.py {
+    bottom: 6.7cm;
+    transform: rotate(90deg);
+    width: 130px;
+}
+.web {
+    float: right;
+    right: 1.9in;
+    bottom: 8.7cm;
+    transform: rotate(155deg);
+    width: 500px;
+}
+.ui {
+    float: right;
+    left: 7.6cm;
+    bottom: 6cm;
+    transform: rotate(180deg);
+    width: 370px;
+}
+.dl {
+    left: 5.7cm;
+    bottom: 5cm;
+    transform: rotate(180deg);
+    width: 370px;
+}
+
+.tntd {
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 98%;
+}   
+
+.tntd p {
+    position: relative;
+    top: 6.3cm;
+    font-size: var(--fs-4);
+}
+.smc {
+    position: relative;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: grid;
+    place-items: center;
+}
+
+.smc iconify-icon {scale: 2;}
+
+.events img {position: relative;}
+
+.moreContent button {
+    font-family: var(--encode);
+    font-size: small;
+}
+
+img[alt="i"]{
+    left: 10cm;
+    top: 1cm;
+}
+img[alt="ii"]{
+    left: 7cm;
+    top: 2cm;
+    z-index: 1;
+}
+img[alt="iii"]{
+    left: 3.5cm;
+    top: 5cm;
+}
+img[alt="iv"]{
+    top: 2.5cm;
+}
+
+.moreContent iconify-icon {
+    scale: 5;
+    position: relative;
+    left: 2rem;
+    rotate: -10deg;
+}
+
+.addmailtel > div > iconify-icon {
+    scale: 2;
+}
+
+.footer-socials a {
+    cursor: pointer;
+}
+
+.footer-socials a:hover {
+    animation: shake 2s infinite;
+}
+
+.footer-socials iconify-icon {
+    scale: 1.5;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+@keyframes shake {
+    10%{ transform: scale(1.55) rotate(5deg);}
+    20%{ transform: scale(1.55) rotate(-5deg);}
+    30%{ transform: scale(1.55) rotate(5deg);}
+    40%{ transform: none;}
+}
+@media screen and (min-width: 200px) and (max-width: 480px) {
+    .greyarea p {
+        top: 0.8cm;
+        font-size: x-small;
+    }
+    
+    .greyarea a {
+        top: 0;
+        
+    }
+
+    .we-offer div p {
+        font-size: small;
+    }
+
+    .we-offer div li {
+        font-size: xx-small;
+        line-height: 0;
+    }
+
+    .pdts p {
+        font-size: medium;
+    }
+
+    
+    hr {display: none;}
+    
+    .cir {
+        width: 90px;
+        height: 90px;
+        border-radius: 45px;
+        display: grid;
+        place-items: center;
+    }
+
+    .cir :is(.instafood, .ledger) {
+        scale: 0.7;
+    }
+
+
+}
