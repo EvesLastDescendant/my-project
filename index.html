@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/_custom.css">
 </head>
 <body class="user-select-none">
-    <nav class="navbar navbar-expand-lg border border-bottom shadow-sm p-3 sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg border border-bottom shadow-sm p-3 sticky-top bg-white" id="nav">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/pix/logo.png" alt="Itcentralng" style="width: 200px; height: auto;">
@@ -172,7 +172,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid mt-5 pt-5 trng" id="trng">
+    <div class="container-fluid mt-5 pt-5 trng" data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true" tabindex="0" id="trng">
         <p class="h1 fw-bold mx-5">Trainings We Provide</p>
         <div class="container-fluid mt-5 px-5 text-center clearfix">
             <div class="float-start">
@@ -353,47 +353,55 @@
             <p class="ms-4">Our Well Equipped<br>Training Labs</p>
         </div>
     </div>
-    <div class="container mt-5 pt-5 blog" id="blog">
-        <p class="h1 fw-bold mx-3">Blog Posts</p>
-        <div class="container-fluid mt-5 clearfix">
-            <div class="float-start w-50">
-                <img src="/pix/bl.jfif" alt="blog-pik" class="img-fluid rounded" style="width: inherit; height: inherit;">
+    <div class="container mt-5 pt-5 blog" data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true" tabindex="0" id="blog">
+        <p class="h1 fw-bold">Blog Posts</p>
+    </div>
+    <div class="container mt-5 blog">
+        <div class="row gx-5">
+            <div class="col-6">
+                <img src="/pix/Frame 14.png" class="d-block w-75 img-fluid rounded" alt="...">
             </div>
-            <div class="float-end w-50 clearfix">
-                <img src="/pix/b2.jfif" alt="blog-pik" class="img-fluid rounded float-end" style="width: inherit; height: inherit;">
-            </div>
-        </div>
-        <div class="container-fluid clearfix">
-            <div class="float-start w-25">
-                <p class="fw-bold">What the future holds for VR</p>
-                <p>dolor sit amet consectetur elit. sed do <br> 
-                    suis<span id="dot">...</span>
-                    <button class="btn fw-semibold"><a href="" target="_blank" class="text-decoration-none text-dark">Read More</a></button>
-                </p>
-            </div>
-            <div class="float-end w-25">
-                <p class="fw-bold"> Is too much tech a thing</p>
-                <p>dolor sit amet consectetur elit. sed do <br> 
-                    suis<span id="point">...</span>
-                    <button class="btn fw-semibold"><a href="" target="_blank" class="text-decoration-none text-dark">Read More</a></button>
-                </p>
+            <div class="col-6 clearfix">
+                <img src="/pix/Frame 15.png" class="d-block w-75 img-fluid rounded float-end" alt="...">
             </div>
         </div>
     </div>
-    <div class="container mt-5 events" id="events">
+    <div class="container mt-4 blog">
+        <div class="row gx-5">
+            <div class="col-6">
+                <div class="w-75">
+                    <p class="fw-bold">What the future holds for VR</p>
+                    <p>dolor sit amet consectetur elit. sed do <br> 
+                    suis<span id="dot">...</span>
+                    <a href="BlgCntrl.html" target="_blank" class="btn fw-semibold text-decoration-none text-dark">Read More</a>
+                </p>
+                </div>
+            </div>
+            <div class="col-6 clearfix">
+                <div class="w-75 float-end">
+                    <p class="fw-bold"> Is too much tech a thing</p>
+                    <p>dolor sit amet consectetur elit. sed do <br> 
+                    suis<span id="point">...</span>
+                    <a href="BlgCntrl.html" target="_blank" class="btn fw-semibold text-decoration-none text-dark">Read More</a>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 events" data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true" tabindex="0" id="events">
         <p class="h1 fw-bold">Recent Events</p>
         <div class="container-fluid mt-5 row">
             <div class="col">
-                <img src="/pix/epik.jfif" alt="i" class="img-fluid shadow" style="width: inherit; height: inherit;">
+                <img src="/pix/epik.jfif" alt="i" class="d-block img-fluid shadow">
             </div>
             <div class="col">
-                <img src="/pix/epik1.jfif" alt="ii" class="img-fluid shadow" style="width: inherit; height: inherit;">
+                <img src="/pix/epik1.jfif" alt="ii" class="d-block img-fluid shadow">
             </div>
             <div class="col">
-                <img src="/pix/epik2.jfif" alt="iii" class="img-fluid shadow" style="width: inherit; height: inherit;">
+                <img src="/pix/epik2.jfif" alt="iii" class="d-block img-fluid shadow">
             </div>
             <div class="col">
-                <img src="/pix/epik3.jfif" alt="iv" class="img-fluid shadow" style="width: inherit; height: inherit;">
+                <img src="/pix/epik3.jfif" alt="iv" class="d-block img-fluid shadow">
             </div>
         </div>
         <br><br>
@@ -404,8 +412,8 @@
             <iconify-icon icon="ph:arrow-bend-down-left-thin" class="img-fluid event-icon" style="color: rgb(102, 216, 178);"></iconify-icon>
         </div>
     </div>
-    <footer class="container-fluid pt-5 mt-5 text-bg-primary" id="footer">
-        <div class="container-fluid mx-auto row row-cols-3">
+    <footer class="container-fluid pt-5 mt-5 text-bg-primary" data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true" tabindex="0" id="footer">
+        <div class="container-fluid mx-auto row row-cols-3 opacity-75">
             <div class="col-4 d-flex flex-column pt-5 text-start addmailtel">
                 <div class="w-75 mx-auto d-flex flex-row justify-content-start">
                     <iconify-icon icon="gridicons:location" class="img-fluid mt-4"></iconify-icon>
@@ -440,7 +448,7 @@
                 <p>Emerging Technology Solutions</p><br>
                 <p>Graphics design</p>
             </div>
-            <div class="col-12 px-3 mb-4">
+            <div class="col-12 px-5 mb-4">
                 &commat;2022 Mr teey Investment All Rights Reserved
             </div>
         </div>

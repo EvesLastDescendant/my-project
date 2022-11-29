@@ -14,66 +14,18 @@
     --fs-4: 40px;   
 }
 
-:is(nav, .mailto) {
-    font-family: var(--josefin);
-}
+:is(.pfrO, .pfrTh, .pfrF,
+    .pfrS, .pfrSv, .pfrN,
+    footer) {font-family: var(--dm);}
 
-:is(.frame-one, .frame-two,
-    .frame-tri, .frame-foe,
-    .frame-faiv, footer) {
-        font-family: var(--dm);
-    }
+:is(.navul a, button) {font-family: var(--josefin);}
 
 .navul a:hover {
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
 
-.frame-two img {
-    scale: 1.5;
-}
-:is(.frame-foe, .frame-faiv) img {
-    position: relative;
-}
-
-img[alt="i"]{
-    left: 10cm;
-    top: 1cm;
-}
-img[alt="ii"]{
-    left: 7cm;
-    top: 2cm;
-    z-index: 1;
-}
-img[alt="iii"]{
-    left: 3.5cm;
-    top: 5cm;
-}
-img[alt="iv"]{
-    top: 2.5cm;
-}
-img[alt="vi"]{
-    right: 5.1cm;
-    top: 4cm;
-    z-index: 1;
-}
-img[alt="vii"]{
-    right: 7.6cm;
-}
-img[alt="viii"]{
-    right: 16cm;
-    top: 3.7cm;
-}
-
-.fol {
-    position: relative;
-    bottom: 1cm;
-    right: 9cm;
-}
-
-:is(.lead, .fol) p:nth-child(2) {
-    font-size: 15px;
-}
+.pfrN :is( #vrblog, #techblog) {display: none;}
 
 .addmailtel > div > iconify-icon {
     scale: 2;
@@ -100,21 +52,4 @@ img[alt="viii"]{
     20%{ transform: scale(1.55) rotate(-5deg);}
     30%{ transform: scale(1.55) rotate(5deg);}
     40%{ transform: none;}
-}
-@media screen and (min-width: 200px) and (max-width: 480px) {
-    
-    
-    .cir {
-        width: 90px;
-        height: 90px;
-        border-radius: 45px;
-        display: grid;
-        place-items: center;
-    }
-
-    .cir :is(.instafood, .ledger) {
-        scale: 0.7;
-    }
-
-
 }

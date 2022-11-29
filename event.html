@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/pix/logo.png" type="image/x-icon" sizes="32x32">
-    <title>ItCentralNg</title>
+    <title>Events</title>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.1/dist/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/scss/bootstrap.scss">
-    <link rel="stylesheet" href="/scss/_custom.scss">
     <link rel="stylesheet" href="/css/customevent.css">
 </head>
 <body class="user-select-none">
-    <nav class="navbar navbar-expand-lg border border-bottom shadow-sm p-3 sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg border border-bottom shadow-sm p-3 sticky-top bg-white" id="nav">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/pix/logo.png" alt="Itcentralng" style="width: 200px; height: auto;">
@@ -35,10 +34,10 @@
                             <a href="index.html#trng" target="_blank" class="nav-link text-secondary">Trainings</a>
                         </li>
                         <li class="nav-item mt-3 pe-4 me-5">
-                            <a href="#events" class="nav-link active text-dark" aria-current="page">Events</a>
+                            <a href="#" class="nav-link active text-dark" aria-current="page">Events</a>
                         </li>
                         <li class="nav-item mt-3 pe-4 me-5">
-                            <a href="#blog" target="_blank" class="nav-link text-secondary">Blog</a>
+                            <a href="blogCtl.html" target="_blank" class="nav-link text-secondary">Blog</a>
                         </li>
                         <li class="nav-item mt-3">
                             <a href="#footer" class="nav-link text-secondary">About</a>
@@ -51,22 +50,22 @@
     <div class="container-fluid mt-5 frame-one">
         <div class="container clearfix">
             <div class="float-start w-25">
-                <p class="h2 lh-base">Lorem ipsum dolor <br>sit amet, <br>consectetur <br>adispiscing elit</p>
+                <p class="h3 lh-base fw-bold">Lorem ipsum dolor <br>sit amet, <br>consectetur <br>adispiscing elit</p>
                 <p class="mt-5">By</p>
                 <p class="fw-bold">Anas Ahmad</p>
                 <p class="lh-1">Product Designer</p>
                 <p class="fw-bold">13th Feb 2022</p>
-                <p class="lh-1">9:00pb GMT</p>
+                <p class="lh-1">9:00pm GMT</p>
                 <a href="mailto:Itcentralng@gmail.com" target="_blank" class="btn btn-link py-2 px-5 mt-5 text-bg-primary text-decoration-none mailto">Contact Us</a>
             </div>
             <div class="float-end w-75">
-                <img src="/pix/girlmega.png" alt="gm" class="img-fluid rounded-4" style="width: 100%; height: inherit;">
+                <img src="/pix/girlmega.png" alt="gm" class="img-fluid rounded" style="width: 100%; height: inherit;">
             </div>
         </div>
     </div>
     <div class="container-fluid mt-5 frame-two">
         <div class="container">
-            <p class="h5">Powered By</p>
+            <p class="h5 fw-semibold">Powered By</p>
             <div class="container-fluid row">
                 <div class="col-4  text-start"><img src="/pix/flutterwave.png" alt="flutterwave" class="img-fluid" style="width: inherit; height: inherit;"></div>
                 <div class="col-3 text-center"><img src="/pix/mtn.png" alt="mtn" class="img-fluid" style="width: inherit; height: inherit;"></div>
@@ -194,8 +193,8 @@
             </div>
         </div>
     </div>
-    <footer class="container-fluid pt-5 mt-5 text-bg-primary" id="footer">
-        <div class="container-fluid mx-auto row row-cols-3">
+    <footer class="container-fluid pt-5 mt-5 text-bg-primary" data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true" tabindex="0" id="footer">
+        <div class="container-fluid mx-auto row row-cols-3 opacity-75">
             <div class="col-4 d-flex flex-column pt-5 text-start addmailtel">
                 <div class="w-75 mx-auto d-flex flex-row justify-content-start">
                     <iconify-icon icon="gridicons:location" class="img-fluid mt-4"></iconify-icon>
@@ -230,12 +229,13 @@
                 <p>Emerging Technology Solutions</p><br>
                 <p>Graphics design</p>
             </div>
-            <div class="col-12 px-3 mb-4">
+            <div class="col-12 px-5 mb-4">
                 &commat;2022 Mr teey Investment All Rights Reserved
             </div>
         </div>
     </footer>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

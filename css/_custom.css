@@ -37,7 +37,7 @@
         font-family: var(--dm);
     }
 
-:is(.navul a, .greyarea a) {
+:is(.navul a, .greyarea a, .blog button a) {
     font-family: var(--josefin);
 }    
 
