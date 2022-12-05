@@ -148,16 +148,16 @@ hr{
 }
 .ui {
     float: right;
-    left: 7.3cm;
+    left: 7.7cm;
     bottom: 6cm;
     transform: rotate(180deg);
-    width: 310px;
+    width: 330px;
 }
 .dl {
-    left: 4.6cm;
+    left: 4.3cm;
     bottom: 5cm;
     transform: rotate(180deg);
-    width: 315px;
+    width: 330px;
 }
 
 .tntd {
