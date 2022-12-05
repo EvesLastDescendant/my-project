@@ -130,9 +130,9 @@ hr{
 }
 .mob {
     bottom: 7cm;
-    left: 1.9in;
-    transform: rotate(22deg);
-    width: 500px;
+    left: 1.3in;
+    transform: rotate(24deg);
+    width: 450px;
 }
 .py {
     bottom: 6.7cm;
@@ -141,23 +141,23 @@ hr{
 }
 .web {
     float: right;
-    right: 1.9in;
-    bottom: 8.7cm;
+    right: 1.3in;
+    bottom: 8.5cm;
     transform: rotate(155deg);
-    width: 500px;
+    width: 450px;
 }
 .ui {
     float: right;
-    left: 7.6cm;
+    left: 7.3cm;
     bottom: 6cm;
     transform: rotate(180deg);
-    width: 370px;
+    width: 310px;
 }
 .dl {
-    left: 5.7cm;
+    left: 4.6cm;
     bottom: 5cm;
     transform: rotate(180deg);
-    width: 370px;
+    width: 315px;
 }
 
 .tntd {
@@ -244,14 +244,11 @@ img[alt="iv"]{
 }
 @media screen and (min-width: 200px) and (max-width: 480px) {
     .greyarea p {
-        top: 0.8cm;
+        top: 1.5cm;
         font-size: x-small;
     }
     
-    .greyarea a {
-        top: 0;
-        
-    }
+    .greyarea div {display: none;}
 
     .we-offer div p {
         font-size: small;
@@ -266,20 +263,27 @@ img[alt="iv"]{
         font-size: medium;
     }
 
-    
-    hr {display: none;}
-    
     .cir {
-        width: 90px;
-        height: 90px;
+        width: 60px;
+        height: 60px;
         border-radius: 45px;
         display: grid;
         place-items: center;
     }
 
     .cir :is(.instafood, .ledger) {
-        scale: 0.7;
+        scale: 0.6;
     }
+
+    .mivi div {scale: 0.5;}
+
+    .ocv :is(.ocvbox) {width: 80px;}
+    
+    .ocv :is(.ocvbox :is(p)) {font-size: x-small;}
+    
+    hr {display: none;}
+    
+    
 
 
 }
