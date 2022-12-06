@@ -248,7 +248,11 @@ img[alt="iv"]{
     40%{ transform: none;}
 }
 @media screen and (min-width: 200px) and (max-width: 480px) {
-    .imglg {scale: 0.5;}
+    .imglg {
+        position: relative;
+        left: -1.5cm;
+        scale: 0.5;
+    }
     
     .greyarea p {
         top: 1.5cm;
