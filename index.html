@@ -9,14 +9,14 @@
   <title>ItCentralNg</title>
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.1/dist/iconify-icon.min.js"></script>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/_custom.css">
+  <link rel="stylesheet" href="/css/custom.css">
 </head>
 
 <body class="user-select-none">
   <nav class="navbar navbar-expand-lg border border-bottom shadow-sm p-3 sticky-top bg-white" id="nav">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="/pix/logo.png" alt="Itcentralng" style="width: 200px; height: auto;">
+        <img src="/pix/logo.png" class="img-fluid imglg" alt="Itcentralng" style="width: 200px; height: auto;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
@@ -25,7 +25,9 @@
       <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
         id="offcanvasNavbar" aria-labelledby="offcanvasNavlabel">
         <div class="offcanvas-header">
-          <p class="offcanvas-title h5 text-primary" id="offcanvasNavlabel">ItCentralng</p>
+          <a class="offcanvas-title" href="#" id="offcanvasNavlabel">
+            <img src="/pix/logo.png" class="img-fluid imglg" alt="Itcentralng" style="width: 200px; height: auto;">
+          </a>
           <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
         </div>
@@ -302,7 +304,7 @@
       </div>
       <div class="pt-5">
         <a class="text-decoration-none" href="#">
-          <img src="/pix/logo.png" alt="logo" style="width: 150px; height: auto;">
+          <img src="/pix/logo.png" class="img-fluid" alt="logo" style="width: 150px; height: auto;">
         </a>
       </div>
       <div class="">
@@ -374,13 +376,13 @@
     <hr class="ui">
     </hr>
   </div>
-  <div class="container mt-5 position-relative overflow-hidden lab">
+  <div class="container mt-5 position-relative lab">
     <img src="/pix/office.png" alt="lab" class="img-fluid" style="width: inherit; height: inherit;">
     <div class="position-absolute text-white px-5 tntd">
       <p class="ms-4">Our Well Equipped<br>Training Labs</p>
     </div>
   </div>
-  <div class="container mt-5 pt-5 blog" data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true"
+  <div class="container mt-5 pt-5" data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true"
     tabindex="0" id="blog">
     <p class="h1 fw-bold">Blog Posts</p>
   </div>

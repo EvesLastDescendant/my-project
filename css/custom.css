@@ -12,12 +12,17 @@
     --fs-2: 15px;
     --fs-3: 20px;
     --fs-4: 40px;
+    --fs-5: 5px;
+    --fs-6: 10px;
+    --fs-7: 12px;
     --icon: rgba(0, 0, 0, 0.04);     
 }
 .navul a:hover {
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
+
+.imglg {filter: drop-shadow(1px 1px 2px rgb(0, 42, 133));}
 
 .greyarea {
     position: absolute;
@@ -243,6 +248,8 @@ img[alt="iv"]{
     40%{ transform: none;}
 }
 @media screen and (min-width: 200px) and (max-width: 480px) {
+    .imglg {scale: 0.5;}
+    
     .greyarea p {
         top: 1.5cm;
         font-size: x-small;
@@ -275,15 +282,78 @@ img[alt="iv"]{
         scale: 0.6;
     }
 
-    .mivi div {scale: 0.5;}
+    .mivi div {
+        height: max-content;
+    }
 
     .ocv :is(.ocvbox) {width: 80px;}
     
-    .ocv :is(.ocvbox :is(p)) {font-size: x-small;}
+    .ocv :is(.ocvbox :is(p)) {font-size: var(--fs-5);}
+
+    .ocv :is(iconify-icon[icon="teenyicons:heart-circle-outline"],
+            iconify-icon[icon="fa6-solid:hands-holding"]) {
+                scale: 0.9;
+            }
     
+    .trng button p {font-size: var(--fs-5);}
+
+    .trng .smc {
+        width: 30px;
+        height: 30px;
+        bottom: 15px;
+    }
+
+    .trng .smc iconify-icon {scale: 0.95;}
+
+    .trng img {
+        scale: 0.5;
+        position: relative;
+        bottom: 20px;
+    }
     hr {display: none;}
     
-    
+    .lab .tntd p {
+        font-size: var(--fs-2);
+        color: white;
+        position: relative;
+        top: 1.9cm;
+        left: -1cm;
+    }
 
+    .blog p:nth-child(1) {font-size: var(--fs-6);}
 
+    .blog :is(p:nth-child(2), a) {font-size: var(--fs-5);}
+
+    img[alt="i"]{
+        left: 0;
+        top: 0;
+    }
+    img[alt="ii"]{
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+    img[alt="iii"]{
+        left: 0;
+        top: 0;
+    }
+    img[alt="iv"]{
+        top: 0;
+    }
+
+    .moreContent p:nth-child(1) {font-size: var(--fs-7);}
+
+    .moreContent p:nth-child(2) {font-size: var(--fs-6);}
+
+    .moreContent button {
+        scale: 0.7;
+        position: relative;
+        left: -15px;
+    }
+
+    .moreContent iconify-icon {
+    left: 0;
+    }
+
+    footer {font-size: xx-small;}
 }

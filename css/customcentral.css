@@ -24,6 +24,8 @@
     text-underline-offset: 0.5rem;
 }
 
+.imglg {filter: drop-shadow(1px 1px 2px rgb(0, 42, 133));}
+
 .frm-wan p:nth-child(2) {font-size: var(--fs-2);}
 
 .gray {

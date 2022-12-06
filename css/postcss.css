@@ -25,6 +25,8 @@
     text-underline-offset: 0.5rem;
 }
 
+.imglg {filter: drop-shadow(1px 1px 2px rgb(0, 42, 133));}
+
 .pfrN :is( #vrblog, #techblog) {display: none;}
 
 .addmailtel > div > iconify-icon {
