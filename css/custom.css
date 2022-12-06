@@ -15,6 +15,7 @@
     --fs-5: 5px;
     --fs-6: 10px;
     --fs-7: 12px;
+    --fs-8: 6px;
     --icon: rgba(0, 0, 0, 0.04);     
 }
 .navul a:hover {
@@ -316,6 +317,8 @@ img[alt="iv"]{
     }
     hr {display: none;}
     
+    .lab .tntd {width: 95%;}
+
     .lab .tntd p {
         font-size: var(--fs-2);
         color: white;
@@ -359,5 +362,5 @@ img[alt="iv"]{
     left: 0;
     }
 
-    footer {font-size: xx-small;}
+    footer {font-size: var(--fs-5);}
 }
