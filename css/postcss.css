@@ -11,7 +11,13 @@
     --fs-1: 27px;
     --fs-2: 15px;
     --fs-3: 20px;
-    --fs-4: 40px;   
+    --fs-4: 40px;
+    --fs-5: 5px;
+    --fs-6: 10px;
+    --fs-7: 12px;
+    --fs-8: 6px;
+    --fs-9: 7px;
+    --icon: rgba(0, 0, 0, 0.04);   
 }
 
 :is(.pfrO, .pfrTh, .pfrF,
@@ -54,4 +60,23 @@
     20%{ transform: scale(1.55) rotate(-5deg);}
     30%{ transform: scale(1.55) rotate(5deg);}
     40%{ transform: none;}
+}
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+    .imglg {
+        position: relative;
+        left: -1.5cm;
+        scale: 0.5;
+    }
+
+    .pfrO p {font-size: var(--fs-7);}
+
+    :is(.pfrTh p, .pfrF ul li, .pfrS p) {font-size: xx-small;}
+
+    .pfrSv p {font-size: var(--fs-2);}
+
+    .pfrN p:nth-child(1) {font-size: var(--fs-6);}
+    .pfrN :is(p:nth-child(2), button) {font-size: var(--fs-9);}
+
+    footer {font-size: var(--fs-5);}
 }
