@@ -101,5 +101,5 @@
     .frm-foe p:nth-child(1) {font-size: var(--fs-6);}
     :is(.frm-foe p:nth-child(2), .frm-foe button) {font-size: var(--fs-9);}
     
-    footer {font-size: var(--fs-5);}
+    footer {font-size: var(--fs-8);}
 }

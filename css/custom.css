@@ -330,7 +330,7 @@ img[alt="iv"]{
 
     .blog p:nth-child(1) {font-size: var(--fs-6);}
 
-    .blog :is(p:nth-child(2), a) {font-size: var(--fs-5);}
+    .blog :is(p:nth-child(2), a) {font-size: xx-small;}
 
     img[alt="i"]{
         left: 0;
@@ -363,5 +363,5 @@ img[alt="iv"]{
     left: 0;
     }
 
-    footer {font-size: var(--fs-5);}
+    footer {font-size: var(--fs-8);}
 }

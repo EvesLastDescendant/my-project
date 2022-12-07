@@ -78,5 +78,5 @@
     .pfrN p:nth-child(1) {font-size: var(--fs-6);}
     .pfrN :is(p:nth-child(2), button) {font-size: var(--fs-9);}
 
-    footer {font-size: var(--fs-5);}
+    footer {font-size: var(--fs-8);}
 }

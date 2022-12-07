@@ -104,19 +104,6 @@ img[alt="viii"]{
     40%{ transform: none;}
 }
 @media screen and (min-width: 200px) and (max-width: 480px) {
-    
-    
-    .cir {
-        width: 90px;
-        height: 90px;
-        border-radius: 45px;
-        display: grid;
-        place-items: center;
-    }
 
-    .cir :is(.instafood, .ledger) {
-        scale: 0.7;
-    }
-
-
+    footer {font-size: var(--fs-8);}
 }
