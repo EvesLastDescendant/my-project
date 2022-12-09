@@ -11,7 +11,13 @@
     --fs-1: 27px;
     --fs-2: 15px;
     --fs-3: 20px;
-    --fs-4: 40px;   
+    --fs-4: 40px;
+    --fs-5: 5px;
+    --fs-6: 10px;
+    --fs-7: 12px;
+    --fs-8: 6px;
+    --fs-9: 7px;
+    --icon: rgba(0, 0, 0, 0.04);   
 }
 
 :is(nav, .mailto) {
@@ -104,6 +110,30 @@ img[alt="viii"]{
     40%{ transform: none;}
 }
 @media screen and (min-width: 200px) and (max-width: 480px) {
+    .imglg {
+        position: relative;
+        left: -1.5cm;
+        scale: 0.5;
+    }
+    
+    .frame-one p {font-size: xx-small;}
+
+    .by, .aa, .pd, .dt, .tm, .mailto {position: relative;}
+    .by {bottom: 1.2cm;}
+    .aa {bottom: 1.5cm;}
+    .pd {bottom: 1.9cm;}
+    .dt {bottom: 2.2cm;}
+    .tm {bottom: 2.55cm;}
+    .mailto {
+        font-size: var(--fs-6);
+        scale: 0.7;
+        right: 0.5cm;
+        bottom: 4.1cm;
+    }
+
+    .frame-two img {scale: 2.5;}
+
+    .ue p {font-size: var(--fs-2);}
 
     footer {font-size: var(--fs-8);}
 }
