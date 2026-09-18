@@ -1,0 +1,6 @@
+import { Box, Container, Grid, Typography } from '@mui/material';
+import BlogCard from '../../components/BlogCard';
+
+const posts = [{ image: '/pix/blogpic.jfif', title: 'What the future holds for VR', excerpt: 'Exploring the technologies shaping how we learn, work, and connect.', slug: 'future-of-vr' }, { image: '/pix/Frame 14.png', title: 'Is too much tech a thing?', excerpt: 'A practical look at building healthier relationships with technology.', slug: 'too-much-tech' }, { image: '/pix/Frame 16.png', title: 'Designing for useful technology', excerpt: 'Why empathy and clarity matter when building digital products.', slug: 'useful-technology' }];
+
+export default function BlogPage() { return <main><Box sx={{ bgcolor: '#12396c', color: 'white', py: 10 }}><Container maxWidth="lg"><Typography variant="overline">ITCentral journal</Typography><Typography variant="h1" sx={{ mt: 1, fontSize: { xs: '3rem', md: '4.5rem' } }}>The Blog Central</Typography><Typography sx={{ mt: 2, color: 'rgba(255,255,255,.75)', maxWidth: 560 }}>Thoughtful articles on technology, design, learning, and the people building what comes next.</Typography></Container></Box><Container maxWidth="lg" sx={{ py: 8 }}><Grid container spacing={3}>{posts.map(post => <Grid size={{ xs: 12, md: 4 }} key={post.slug}><BlogCard {...post} /></Grid>)}</Grid></Container></main>; }
