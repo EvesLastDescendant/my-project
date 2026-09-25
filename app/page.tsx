@@ -5,15 +5,128 @@ import RocketLaunchOutlinedIcon from '@mui/icons-material/RocketLaunchOutlined';
 import CourseDialog from '../components/CourseDialog';
 import BlogCard from '../components/BlogCard';
 
-const blogs = [{ image: '/pix/Frame 14.png', title: 'What the future holds for VR', excerpt: 'Exploring the technologies shaping how we learn, work, and connect.', slug: 'future-of-vr' }, { image: '/pix/Frame 15.png', title: 'Is too much tech a thing?', excerpt: 'A practical look at building healthier relationships with technology.', slug: 'too-much-tech' }];
-const features = [{ title: 'Startup acceleration', text: 'Turn ideas into stronger, more focused businesses.', Icon: RocketLaunchOutlinedIcon }, { title: 'Software solutions', text: 'Build useful products for real people and real problems.', Icon: CodeOutlinedIcon }, { title: 'Hands-on training', text: 'Learn by doing with practical, career-ready courses.', Icon: SchoolOutlinedIcon }];
+const blogs = [
+  { image: '/pix/Frame 14.png', 
+    title: 'What the future holds for VR', 
+    excerpt: 'Exploring the technologies shaping how we learn, work, and connect.', 
+    slug: 'future-of-vr' 
+  }, 
+  { image: '/pix/Frame 15.png', 
+    title: 'Is too much tech a thing?', 
+    excerpt: 'A practical look at building healthier relationships with technology.', 
+    slug: 'too-much-tech' 
+  }
+];
+const features = [
+  { title: 'Startup acceleration', 
+    text: 'Turn ideas into stronger, more focused businesses.', 
+    Icon: RocketLaunchOutlinedIcon 
+  }, 
+  { 
+    title: 'Software solutions', 
+    text: 'Build useful products for real people and real problems.', 
+    Icon: CodeOutlinedIcon 
+  }, 
+  { 
+    title: 'Hands-on training', 
+    text: 'Learn by doing with practical, career-ready courses.', 
+    Icon: SchoolOutlinedIcon 
+  }
+];
 
 export default function HomePage() {
-  return <main>
-    <Box className="hero-grid" sx={{ bgcolor: '#12396c', color: 'white', py: { xs: 8, md: 13 } }}><Container maxWidth="lg"><Grid container spacing={6} sx={{ alignItems: 'center' }}><Grid size={{ xs: 12, md: 7 }}><Chip label="Technology • Training • Community" sx={{ bgcolor: 'rgba(255,255,255,.12)', color: 'white', mb: 3 }} /><Typography variant="h1" sx={{ fontSize: { xs: '3rem', md: '5rem' }, lineHeight: 1.02, maxWidth: 700 }}>Make the next move in tech.</Typography><Typography sx={{ fontSize: '1.2rem', color: 'rgba(255,255,255,.78)', maxWidth: 550, mt: 3, lineHeight: 1.7 }}>ITCentral equips ambitious people and businesses with practical technology skills, products, and a community built for progress.</Typography><Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 4 }}><Button href="#trainings" variant="contained" color="secondary" size="large">Explore training</Button><Button href="/events" variant="outlined" size="large" sx={{ color: 'white', borderColor: 'rgba(255,255,255,.5)' }}>See events</Button></Stack></Grid><Grid size={{ xs: 12, md: 5 }}><Box component="img" src="/pix/img1.jpeg" alt="ITCentral learning community" sx={{ width: '100%', borderRadius: 5, display: 'block', maxHeight: 400, objectFit: 'cover' }} /></Grid></Grid></Container></Box>
-    <Container maxWidth="lg" sx={{ py: 10 }}><Grid container spacing={4} sx={{ alignItems: 'center' }}><Grid size={{ xs: 12, md: 6 }}><Typography variant="overline" color="primary" sx={{ fontWeight: 700 }}>Our work</Typography><Typography variant="h2" sx={{ mt: 1 }}>Technology that moves people forward.</Typography><Typography color="text.secondary" sx={{ mt: 2, lineHeight: 1.8 }}>From startup incubation to software solutions, we create the support system northern founders need to build globally relevant companies.</Typography></Grid><Grid size={{ xs: 12, md: 6 }}><Grid container spacing={2}>{features.map(({ title, text, Icon }) => <Grid size={{ xs: 12 }} key={title}><Paper elevation={0} sx={{ p: 3, border: '1px solid #e1e8f1', display: 'flex', gap: 2 }}><Box sx={{ color: 'primary.main' }}><Icon /></Box><Box><Typography sx={{ fontWeight: 700 }}>{title}</Typography><Typography color="text.secondary">{text}</Typography></Box></Paper></Grid>)}</Grid></Grid></Grid></Container>
-    <Box id="trainings" sx={{ bgcolor: 'white', py: 10 }}><Container maxWidth="lg"><Typography variant="overline" color="primary" sx={{ fontWeight: 700 }}>Learn by doing</Typography><Typography variant="h2" sx={{ mt: 1 }}>Training built around practice.</Typography><Typography color="text.secondary" sx={{ mt: 2, maxWidth: 600 }}>Choose a path, work on real projects, and leave with skills you can use immediately.</Typography><Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 5 }}><CourseDialog title="Mobile development" icon="📱" /><CourseDialog title="Python programming" icon="🐍" /><CourseDialog title="Web development" icon="⌘" /></Stack></Container></Box>
-    <Container id="about" maxWidth="lg" sx={{ py: 10 }}><Grid container spacing={5}><Grid size={{ xs: 12, md: 6 }}><Typography variant="h2">Our mission</Typography><Typography color="text.secondary" sx={{ mt: 2, fontSize: '1.15rem', lineHeight: 1.8 }}>To build the next generation of northern tech startup founders and envision a Nigeria where globally relevant startups come from every region.</Typography></Grid><Grid size={{ xs: 12, md: 6 }}><Typography variant="h2">Our values</Typography><Stack direction="row" sx={{ mt: 3, flexWrap: 'wrap', gap: 1 }}>{['Teamwork', 'Transparency', 'Respect', 'Growth', 'Empathy'].map(value => <Chip key={value} label={value} color="primary" variant="outlined" />)}</Stack></Grid></Grid></Container>
-    <Box sx={{ bgcolor: '#eef4fb', py: 10 }}><Container maxWidth="lg"><Stack direction="row" sx={{ mb: 4, justifyContent: 'space-between', alignItems: 'flex-end' }}><Box><Typography variant="overline" color="primary" sx={{ fontWeight: 700 }}>From the blog</Typography><Typography variant="h2" sx={{ mt: 1 }}>Ideas worth sharing.</Typography></Box><Button href="/blog">All articles</Button></Stack><Grid container spacing={3}>{blogs.map(blog => <Grid size={{ xs: 12, md: 6 }} key={blog.slug}><BlogCard {...blog} /></Grid>)}</Grid></Container></Box>
-  </main>;
+  return (
+  <main>
+    <Box className="hero-grid" sx={{ bgcolor: '#12396c', color: 'white', py: { xs: 8, md: 13 } }}>
+      <Container maxWidth="lg">
+        <Grid container spacing={6} sx={{ alignItems: 'center' }}>
+          <Grid size={{ xs: 12, md: 7 }}>
+            <Chip label="Technology • Training • Community" sx={{ bgcolor: 'rgba(255,255,255,.12)', color: 'white', mb: 3 }} />
+            <Typography variant="h1" sx={{ fontSize: { xs: '3rem', md: '5rem' }, lineHeight: 1.02, maxWidth: 700 }}>Make the next move in tech.</Typography>
+            <Typography sx={{ fontSize: '1.2rem', color: 'rgba(255,255,255,.78)', maxWidth: 550, mt: 3, lineHeight: 1.7 }}>ITCentral equips ambitious people and businesses with practical technology skills, products, and a community built for progress.</Typography>
+            <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 4 }}>
+              <Button href="#trainings" variant="contained" color="secondary" size="large">Explore training</Button>
+              <Button href="/events" variant="outlined" size="large" sx={{ color: 'white', borderColor: 'rgba(255,255,255,.5)' }}>See events</Button>
+            </Stack>
+          </Grid>
+          <Grid size={{ xs: 12, md: 5 }}>
+            <Box component="img" src="/pix/img1.jpeg" alt="ITCentral learning community" sx={{ width: '100%', borderRadius: 5, display: 'block', maxHeight: 400, objectFit: 'cover' }} />
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
+    <Container maxWidth="lg" sx={{ py: 10 }}>
+      <Grid container spacing={4} sx={{ alignItems: 'center' }}>
+        <Grid size={{ xs: 12, md: 6 }}>
+          <Typography variant="overline" color="primary" sx={{ fontWeight: 700 }}>Our work</Typography>
+          <Typography variant="h2" sx={{ mt: 1 }}>Technology that moves people forward.</Typography>
+          <Typography color="text.secondary" sx={{ mt: 2, lineHeight: 1.8 }}>From startup incubation to software solutions, we create the support system northern founders need to build globally relevant companies.</Typography>
+        </Grid>
+        <Grid size={{ xs: 12, md: 6 }}>
+          <Grid container spacing={2}>
+            {features.map(({ title, text, Icon }) => (
+              <Grid size={{ xs: 12 }} key={title}>
+                <Paper elevation={0} sx={{ p: 3, border: '1px solid #e1e8f1', display: 'flex', gap: 2 }}>
+                  <Box sx={{ color: 'primary.main' }}><Icon /></Box>
+                  <Box>
+                    <Typography sx={{ fontWeight: 700 }}>{title}</Typography>
+                    <Typography color="text.secondary">{text}</Typography>
+                  </Box>
+                </Paper>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      </Grid>
+    </Container>
+    <Box id="trainings" sx={{ bgcolor: 'white', py: 10 }}>
+      <Container maxWidth="lg">
+        <Typography variant="overline" color="primary" sx={{ fontWeight: 700 }}>Learn by doing</Typography>
+        <Typography variant="h2" sx={{ mt: 1 }}>Training built around practice.</Typography>
+        <Typography color="text.secondary" sx={{ mt: 2, maxWidth: 600 }}>Choose a path, work on real projects, and leave with skills you can use immediately.</Typography>
+        <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 5 }}>
+          <CourseDialog title="Mobile development" icon="📱" />
+          <CourseDialog title="Python programming" icon="🐍" />
+          <CourseDialog title="Web development" icon="⌘" />
+        </Stack>
+      </Container>
+    </Box>
+    <Container id="about" maxWidth="lg" sx={{ py: 10 }}>
+      <Grid container spacing={5}>
+        <Grid size={{ xs: 12, md: 6 }}>
+          <Typography variant="h2">Our mission</Typography>
+          <Typography color="text.secondary" sx={{ mt: 2, fontSize: '1.15rem', lineHeight: 1.8 }}>
+            To build the next generation of northern tech startup founders and envision a Nigeria where globally relevant startups come from every region.
+          </Typography>
+        </Grid>
+        <Grid size={{ xs: 12, md: 6 }}>
+          <Typography variant="h2">Our values</Typography>
+          <Stack direction="row" sx={{ mt: 3, flexWrap: 'wrap', gap: 1 }}>
+            {['Teamwork', 'Transparency', 'Respect', 'Growth', 'Empathy'].map(value => (
+              <Chip key={value} label={value} color="primary" variant="outlined" />
+            ))}
+          </Stack>
+        </Grid>
+      </Grid>
+    </Container>
+    <Box sx={{ bgcolor: '#eef4fb', py: 10 }}>
+      <Container maxWidth="lg">
+        <Stack direction="row" sx={{ mb: 4, justifyContent: 'space-between', alignItems: 'flex-end' }}>
+          <Box>
+            <Typography variant="overline" color="primary" sx={{ fontWeight: 700 }}>From the blog</Typography>
+            <Typography variant="h2" sx={{ mt: 1 }}>Ideas worth sharing.</Typography>
+          </Box>
+          <Button href="/blog">All articles</Button>
+        </Stack>
+        <Grid container spacing={3}>
+          {blogs.map(blog => (
+            <Grid size={{ xs: 12, md: 6 }} key={blog.slug}>
+              <BlogCard {...blog} />
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
+  </main>
+  );
 }
